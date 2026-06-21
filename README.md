@@ -1,73 +1,51 @@
-# Valentine's Day Interactive Website (CodeKage)
+# Flowers For Vanshita 🌸
 
-A cute, interactive web page to ask someone to be your Valentine. Features playful button mechanics, heartwarming GIFs, and heart-shaped confetti.
+A small interactive website I created for someone special to make her smile.
+
+This project started from a simple idea: sending virtual flowers in a unique way instead of just sending a text message. The website features flower-themed GIFs, interactive buttons, and a sweet surprise message at the end.
 
 ## How It Works
 
-1. The page presents the question **"Will you be my Valentine?"** alongside a cute GIF.
-2. Clicking **No** swaps the GIF, changes the button text to increasingly desperate pleas, and grows the **Yes** button bigger and bigger.
-3. Clicking **Yes** celebrates with a special GIF, a victory message, and a burst of heart-shaped confetti.
+* The page greets Vanshita with a flower-themed welcome.
+* Clicking through reveals different flower animations.
+* The experience ends with a special message and a celebration effect.
 
 ## Features
 
-- **Growing "Yes" button** -- gets larger with every "No" click, making it impossible to ignore.
-- **Desperate messages** -- the "No" button cycles through pleading texts like *"Pookie please"* and *"I'm gonna cry..."*.
-- **Animated GIFs** -- seven different GIFs that react to the user's choices.
-- **Heart confetti** -- pink heart-shaped confetti explosion on "Yes" using [canvas-confetti](https://www.npmjs.com/package/canvas-confetti).
-- **Responsive design** -- looks great on desktop and mobile, powered by [Tailwind CSS](https://tailwindcss.com).
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/CodeKageHQ/Ask-out-your-Valentine.git
-   ```
-2. Open `index.html` in your browser.
-
-That's it -- no build step, no dependencies to install. Tailwind CSS and canvas-confetti are loaded via CDN.
+* 🌸 Interactive flower-themed experience
+* 💐 Multiple animated flower GIFs
+* ✨ Celebration confetti effect
+* 📱 Mobile-friendly design
+* 🎨 Clean and simple user interface
 
 ## Project Structure
 
-```
-Ask-out-your-Valentine/
+```text
+flowers-for-vanshita/
 ├── images/
-│   ├── image1.gif    # Default greeting
-│   ├── image2.gif    # After 1st "No"
-│   ├── image3.gif    # After 2nd "No"
-│   ├── image4.gif    # After 3rd "No"
-│   ├── image5.gif    # After 4th "No"
-│   ├── image6.gif    # After 5th "No"
-│   └── image7.gif    # "Yes" celebration
-├── index.html        # The entire app (HTML + CSS + JS)
+│   ├── image1.gif
+│   ├── image2.gif
+│   ├── image3.gif
+│   ├── image4.gif
+│   ├── image5.gif
+│   ├── image6.gif
+│   └── image7.gif
+├── index.html
 ├── LICENSE
 └── README.md
 ```
 
-## Customization
+## Technologies Used
 
-Want to make it your own? Here are some easy tweaks inside `index.html`:
+* HTML5
+* Tailwind CSS
+* JavaScript
+* canvas-confetti
 
-| What | Where | How |
-|------|-------|-----|
-| GIF images | `images/` folder | Replace the GIFs with your own (keep the same filenames) |
-| "No" button messages | `NO_BUTTON_MESSAGES` array | Edit the strings to say whatever you like |
-| Button growth speed | `GROWTH_PER_CLICK` / `FONT_GROWTH_PER_CLICK` constants | Lower the numbers for subtler growth |
-| Confetti colors | `colors` array in the `yesButton` click handler | Swap in any hex color codes |
-| Background gradient | `.gradient-background` in `<style>` | Change the hex colors |
+## Personal Note
 
-## Technologies
+This website was created as a fun little project to bring a smile to a friend's face through a simple interactive experience and a bunch of virtual flowers. 🌷
 
-- **HTML5** -- semantic markup with `<main>` and `<section>`
-- **Tailwind CSS** -- utility-first styling via CDN
-- **JavaScript** -- vanilla JS, no frameworks
-- **canvas-confetti** -- lightweight confetti animation library
+---
 
-## Contributing
-
-Contributions are welcome! Whether it's new GIF suggestions, design tweaks, or code improvements -- fork the repo and open a pull request.
-
-## License
-
-Open source under the [MIT License](LICENSE).
-
-Happy Valentine's Day! ❤️
+Made with 🌸 by Manas Srivastava
