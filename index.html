@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A cute Valentine's Day page to ask someone to be your Valentine!">
   <meta name="theme-color" content="#ffd0e5">
-  <title>Flowers For Vanshita 🌸</title>
+  <title>Sorry Vanshita 🥺</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <style>
@@ -49,20 +49,20 @@
         class="rounded-md h-[300px] object-cover"
       />
       <h1 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">
-        Hello Vanshita 🌸
+        Sorry Vanshita 🥺
       </h1>
       <div id="responseButtons" class="flex gap-4 pt-5 items-center">
         <button
           id="yesButton"
           class="bounce inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium cursor-pointer px-4 py-2 bg-green-500 text-white transition-all duration-300 ease-in-out hover:bg-green-400 min-h-12 min-w-[75px]"
         >
-          Open My Flowers 🌷
+          Some Flowers For You 🌸
         </button>
         <button
           id="noButton"
           class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-xl font-medium cursor-pointer px-4 py-2 bg-red-500 text-white transition-colors hover:bg-red-700 h-12 min-w-[75px]"
         >
-          Maybe Later 😊
+          Still Mad? 😭
         </button>
       </div>
     </section>
@@ -93,14 +93,21 @@
       ];
 
       
-      const NO_BUTTON_MESSAGES = [
-  'Maybe Later 😊',
-  'Just One Click 🌸',
-  'The Flowers Are Waiting 🌷',
-  'Trust Me 😄',
-  'You Might Like Them 💐',
-  'Okay Last Chance 🌹'
-   ];
+    const NO_BUTTON_MESSAGES = [
+
+'Still Mad? 😭',
+
+'Please? 🥺',
+
+'I Really Messed Up 😔',
+
+'Can I Make It Up To You? 🌸',
+
+'Just One Click 💐',
+
+'Pretty Please 🥹'
+
+];
 
       const ALT_TEXTS = [
         'Cute kitten with flowers',
@@ -141,11 +148,12 @@
       });
 
       yesButton.addEventListener('click', () => {
+        responseButtons.style.display = 'none';
         imageDisplay.src = IMAGE_PATHS[IMAGE_PATHS.length - 1];
         imageDisplay.alt = ALT_TEXTS[ALT_TEXTS.length - 1];
         valentineQuestion.innerHTML =
-'🌸 These flowers are for you, Vanshita 🌸<br><br>Just a small way of saying that talking to you is great and "Maza Aaygyyyyyy💪" 😊';
-        responseButtons.style.display = 'none';
+
+'🌸 These flowers are for you 🌸<br><br>I know I messed up, and I am genuinely sorry. These flowers cannot fix everything, but I hope they can bring even a tiny smile to your face 🥺💐';
 
         // Heart-shaped confetti for a valentine theme
         const heart = confetti.shapeFromPath({
